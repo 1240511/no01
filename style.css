@@ -1,0 +1,376 @@
+@charset "utf-8";
+body{
+    background-color: white;
+    margin: 0 auto;
+}
+img{
+    background-repeat: no-repeat;
+}
+header p img{
+    width: 100%;
+}
+.iro{
+    padding-top: 100px;
+}
+
+footer{
+    background-color: green;
+    color: white;
+    height: 130px;
+}
+footer nav ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+footer nav ul {
+    padding-left: 490px;
+    padding-top: 30px;
+}
+footer p{
+    text-align: right;
+    margin: 10px;
+} 
+footer a{
+    color: white;
+}
+a{
+    text-decoration: none; 
+}
+nav ul li a:hover{
+    background-color: yellowgreen;
+    color: white;
+    position: relative;
+    bottom: -15px;
+    top: -5px;
+    text-decoration: none;
+    transform: translate(0,-5px);
+}
+
+.top_11{
+    text-align: center;
+    font-size: larger;
+    padding: 1rem .5rem;
+    border-bottom: 5px solid green;
+}
+.car{
+    font-weight: bold;
+}
+.flo{
+    float: left;
+}
+nav  ul li{
+    list-style: none;
+    float: left;
+    width: 8%;
+}
+.pc{
+  display: block !important;
+}
+.sp{
+  display: none !important;
+}
+/*map*/
+h2{
+    color: green;
+}
+
+#a1{
+    border: solid;
+    border-radius: 10px;
+    width: 18%;
+    border-color: gray;
+}
+
+#a2{
+    text-align: center;
+}
+/*access*/
+main{
+    margin: 30px;
+}
+.circle{
+    list-style-type: circle;
+}
+h2{
+    text-align: center;
+    position: relative;
+    padding: 0 65px;
+    text-align: center;
+}
+h3 {
+    padding: 1rem 2rem;
+    border-left: 4px solid green;
+  }
+
+/*history*/
+.flo{
+    float: left;
+}
+.iro{
+    padding-top: 100px;
+}
+.h2{
+    width: 700px;
+    padding: 1em 2em;
+    border-left: 4px solid green;
+    border-bottom: 2px dotted green;
+    /*border-left: 4px solid ##6f52f1;*/
+}
+.p{
+    text-align: justify;
+}
+.migi{
+    float: right;
+    border-radius: 30px;
+}
+main{
+    padding: 0px 20px;
+}
+
+/*header写真-----*/nav
+.kasaneru{
+    position: relative;
+    background: #fff;
+  }
+
+  .kasaneru p{
+    position: absolute;
+    top:10%;
+    left: 30%;
+    font-weight: bold;
+   -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /*color: #9ACD32;*/
+    /*background-color: #9ACD32;*/
+    color: green;
+    font-size: 73px;
+    border-radius: 42px;
+    margin: 0!important;
+    padding: 0!important;
+  }
+
+  .kasaneru img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .h1_youkoso {
+    color: green;
+    text-shadow: 4px 4px 4px white, -4px -4px 4px white,
+    -4px 4px 4px white,  4px -4px 4px white,
+    4px 0 4px white, -4px  0 4px white,
+    0 4px 4px white,  0 -4px 4px white;
+  }
+  .header_000 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .h1_youkoso {
+    font-size: clamp(16px, 11vw, 80px);
+    font-weight: 700;
+    letter-spacing: .1em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+ 
+  /*phone*/
+  .header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+  }
+  .header_inner {
+    position: relative;
+    padding: 15px;
+  }
+  /* header固定のため余白をつける。メニューのCSSには関係ない */
+  .main{  
+    margin-top: 60px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .pc{
+      display: none !important;
+    }
+    .sp{
+      display: block !important;
+    }
+    .kasaneru p{
+      top:25%;
+      left: 33%;
+      font-size: 36px;
+      border-radius: 42px;
+    }
+      .header_000 {
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .iro{
+      display: none;
+    }
+    .nav {
+      display: block;
+      position: fixed;
+      right: -300px; /* 右から出てくる */
+      top: 0;
+      width: 300px; /* スマホに収まるサイズ */
+      height: 100vh;
+      padding-top: 60px;
+      background-color: #fff;
+      transition: all .6s;
+      z-index: 200;
+      overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+    }
+    .hamburger {
+      position: absolute;
+      right: 15px;
+      top: 8px;
+      width: 40px; /* クリックしやすい幅 */
+      height: 40px; /* クリックしやすい高さ */
+      cursor: pointer;
+      z-index: 300;
+    }
+    .nav_list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .nav_item {
+      text-align: center;
+      padding: 0 14px;
+    }
+    .nav_item a {
+      display: none;
+      display: block;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      color: #333;
+    }
+    .nav_item a:hover {
+      background-color: yellowgreen;
+      color: white;
+    }
+    .hamburger_border {
+      position: absolute;
+      left: 11px;
+      width: 18px;
+      height: 2px;
+      background-color: #333;
+      transition: all .6s;
+    }
+    .hamburger_border_top {
+      top: 14px;
+    }
+    .hamburger_border_center {
+      top: 20px;
+    }
+    .hamburger_border_bottom {
+      top: 26px;
+    }
+    .black_bg {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 100;
+      background-color: #333;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .6s;
+      cursor: pointer;
+    }
+  #for-SP{
+    display: block;
+  }
+ 
+    /* 表示された時用のCSS */
+    .nav-open .nav {
+      right: 0;
+    }
+    .nav-open .black_bg {
+      opacity: .8;
+      visibility: visible;
+    }
+    .nav-open .hamburger_border_top {
+      transform: rotate(45deg);
+      top: 20px;
+    }
+    .nav-open .hamburger_border_center {
+      width: 0;
+      left: 50%;
+    }
+    .nav-open .hamburger_border_bottom {
+      transform: rotate(-45deg);
+      top: 20px;
+    }
+  }/* sp */
+  
+  @media only screen and (min-width: 769px) {
+    .header_inner{
+      max-width: 980px;
+      width: 100%;
+      padding: 15px 30px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo{
+      padding: 12px 30px
+    }
+    .nav_list{
+      text-align: right;
+    }
+    .nav_list li{
+      display: inline-block;
+      text-align: right;
+      padding-left: 20px;
+    }
+    .nav_list li a{
+      font-weight: 600;
+      display: none;
+    }
+    iframe{
+        width: 650px;
+        height: 600px;
+    }     
+   
+  }
+  @media screen and (max-width: 769px){ 
+    .flo{
+      clear: both;
+    }
+    footer{
+      height: 220px;
+    }
+    footer p{
+      padding-bottom: 50px;
+    }
+    main{
+      padding: 0 10px;
+    }
+    #s-m{
+      padding-right: 20px;
+    }
+    .migi{
+      display: none;
+    }
+    footer nav ul{
+      padding: 0;
+    }
+    footer nav ul li{
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+     }
+  }
